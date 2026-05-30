@@ -58,41 +58,6 @@ rain-prediction-app/
 
 ---
 
-## ⚙️ Run Locally
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/YOUR-USERNAME/rain-prediction-app.git
-cd rain-prediction-app
-```
-
-**2. Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-**3. Run the app**
-```bash
-streamlit run app.py
-```
-
-**4. Open in browser**
-```
-http://localhost:8501
-```
-
----
-
-## 📦 Requirements
-
-```
-scikit-learn==1.4.0
-numpy==1.26.4
-joblib==1.3.2
-```
-
----
-
 ## 🔍 How It Works
 
 1. User adjusts **weather sliders** to set current conditions
@@ -120,6 +85,4 @@ This app is deployed on **HuggingFace Spaces** using the Streamlit SDK.
 
 ---
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
