@@ -1,39 +1,125 @@
-title: Rain Prediction App
-emoji: 🌧️
-colorFrom: blue
-colorTo: purple
-sdk: streamlit
-sdk_version: 1.58.0
-app_file: app.py
-pinned: false
-license: mit
-🌧️ Rain Prediction App
-An interactive ML-powered web app that predicts whether it will rain based on current weather conditions.
+# 🌧️ Rain Prediction App
 
-🚀 Live Demo
-Try it here on HuggingFace Spaces!
+An interactive machine learning web application that predicts whether it will rain based on real-time weather conditions.
 
-📊 Model Details
-Algorithm: Random Forest Classifier
-Accuracy: 85%+ on test data
-Features: Humidity, Temperature, Pressure, Wind Speed, Cloud Cover, Dew Point
-🛠️ Tech Stack
-Python
-Scikit-learn
-Streamlit
-NumPy
-📁 Project Structure
+🔗 **[Live Demo on HuggingFace Spaces](https://huggingface.co/spaces/UroojFatima123/rain-prediction-app)**
+
+
+---
+
+## 🚀 Features
+
+- 🌡️ **6 Weather Inputs** — Humidity, Temperature, Pressure, Wind Speed, Cloud Cover, Dew Point
+- 🤖 **ML Prediction** — Random Forest Classifier with real-time inference
+- 📊 **Probability Breakdown** — Visual rain vs no-rain probability bar
+- 🔎 **Factor Analysis** — Key weather factors influencing the prediction
+- 💡 **Smart Recommendations** — Actionable advice based on prediction
+- 🎨 **Modern Dark UI** — Clean, responsive interface built with Streamlit
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Language** | Python 3.10+ |
+| **ML Model** | Random Forest Classifier |
+| **Data Processing** | NumPy, Scikit-learn |
+| **Web Framework** | Streamlit |
+| **Deployment** | HuggingFace Spaces |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 🧠 ML Pipeline
+
+```
+Weather Data → Preprocessing → Feature Engineering → Model Training → Prediction → Web App
+```
+
+**Features used for prediction:**
+- 💧 Humidity (%)
+- 🌡️ Temperature (°C)
+- 🔵 Atmospheric Pressure (hPa)
+- 💨 Wind Speed (km/h)
+- ☁️ Cloud Cover (%)
+- 🌫️ Dew Point (°C)
+
+---
+
+## 📁 Project Structure
+
+```
 rain-prediction-app/
 ├── app.py              # Main Streamlit application
 ├── requirements.txt    # Python dependencies
 └── README.md           # Project documentation
-👩‍💻 About
-Built by Urooj Fatima — B.Tech CSE 2026, SRMCEM Lucknow
+```
 
-This project demonstrates:
+---
 
-End-to-end ML pipeline development
-Data preprocessing & feature engineering
-Model training & evaluation
-Web app deployment on HuggingFace Spaces
-Skills: Python · Scikit-learn · Streamlit · NumPy · Machine Learning · Model Deployment
+## ⚙️ Run Locally
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/YOUR-USERNAME/rain-prediction-app.git
+cd rain-prediction-app
+```
+
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**3. Run the app**
+```bash
+streamlit run app.py
+```
+
+**4. Open in browser**
+```
+http://localhost:8501
+```
+
+---
+
+## 📦 Requirements
+
+```
+scikit-learn==1.4.0
+numpy==1.26.4
+joblib==1.3.2
+```
+
+---
+
+## 🔍 How It Works
+
+1. User adjusts **weather sliders** to set current conditions
+2. App feeds values into a trained **Random Forest Classifier**
+3. Model returns **rain / no-rain prediction** with confidence score
+4. App displays **probability breakdown** and **key influencing factors**
+5. A **recommendation** is shown based on the result
+
+---
+
+## 📊 Model Details
+
+- **Algorithm:** Random Forest Classifier
+- **Training:** Synthetic weather dataset (5,000 samples)
+- **Pipeline:** StandardScaler → RandomForestClassifier
+- **Parameters:** 100 estimators, max depth 8
+
+---
+
+## 🌐 Deployment
+
+This app is deployed on **HuggingFace Spaces** using the Streamlit SDK.
+
+👉 **Try it live:** [huggingface.co/spaces/UroojFatima123/rain-prediction-app](https://huggingface.co/spaces/UroojFatima123/rain-prediction-app)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
